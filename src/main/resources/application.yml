@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /bootcamp
+
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: postgres://ketwmagebkbrnv:d29efbad7f8aca4b49faa4d34ddb87937b491a702de3cf013e87a88031485c23@ec2-35-169-188-58.compute-1.amazonaws.com:5432/d3a8mcst5jer2p
+    username: ketwmagebkbrnv
+    password: d29efbad7f8aca4b49faa4d34ddb87937b491a702de3cf013e87a88031485c23
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: none
+
+
+application:
+    description: Projeto criado para o bootcamp DIO e Santander / back-end em java
