@@ -14,6 +14,7 @@ public class StockMapper {
         Stock stock = new Stock();
         stock.setId(dto.getId());
         stock.setName(dto.getName());
+        stock.setCode(dto.getCode());
         stock.setPrice(dto.getPrice());
         stock.setVariation(dto.getVariation());
         stock.setDate(dto.getDate());
@@ -25,6 +26,7 @@ public class StockMapper {
         StockDTO dto = new StockDTO();
         dto.setId(stock.getId());
         dto.setName(stock.getName());
+        dto.setCode(stock.getCode());
         dto.setPrice(stock.getPrice());
         dto.setVariation(stock.getVariation());
         dto.setDate(stock.getDate());
